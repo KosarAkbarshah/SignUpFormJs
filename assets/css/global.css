@@ -22,7 +22,7 @@ main {
         left: 50%;
         transform: translate(-50%, -50%);
         max-width: 50%;
-        height: 600px;
+        height: 500px;
         background-color: #F6F6F6;
         border-radius: 10px;
         display: flex;
@@ -40,7 +40,7 @@ main {
                 color: #8e9aaf;
                 padding: 0 50px;
                 font-size: 40px;
-                margin-top: 100px;
+                margin-top: 50px;
                 font-family: "Lora", serif;
                 letter-spacing: 2px;
 
@@ -148,7 +148,7 @@ main {
                 color: #8e9aaf;
                 padding: 0 50px;
                 font-size: 40px;
-                margin-top: 100px;
+                margin-top: 50px;
                 font-family: "Lora", serif;
                 letter-spacing: 2px;
 
@@ -254,7 +254,7 @@ main {
         top: 15%;
         left: 50%;
         width: 22%;
-        height: 700px;
+        height: 600px;
         display: flex;
         justify-content: center;
         background-color: #EAC7CC;
@@ -277,7 +277,7 @@ main {
 
             }
 
-            >form {
+            >.form1 {
                 width: 100%;
                 display: flex;
                 justify-content: center;
@@ -312,9 +312,48 @@ main {
 
                 }
 
+                >.valid {
+                    color: red;
+                    width: 80%;
+                    display: none;
+
+                }
+
+                >.e-valid {
+                    color: red;
+                    width: 80%;
+                    display: none;
+
+                }
+
+                >.pass {
+                    color: red;
+                    width: 80%;
+                    display: none;
+
+
+                }
+
+
+
 
 
             }
+
+            >.line {
+                position: absolute;
+                top: 66%;
+                left: 10%;
+                color: red;
+                width: 0px;
+                display: block;
+                transition: .4s;
+                height: 3px;
+
+
+
+            }
+
 
             >.btnreg {
                 display: flex;
@@ -357,7 +396,7 @@ main {
         top: 15%;
         left: 50%;
         width: 22%;
-        height: 700px;
+        height: 580px;
         display: none;
         justify-content: center;
         background-color: #EAC7CC;
@@ -385,7 +424,7 @@ main {
                 display: flex;
                 justify-content: center;
                 flex-wrap: wrap;
-                margin-top: 100px;
+                margin-top: 50px;
 
 
 
