@@ -289,11 +289,17 @@ main {
                     background-color: #EAC7CC;
                     border: none;
                     margin-top: 18px;
+                    border: none;
+                    outline: none;
+                    caret-color: #CE7D88;
+                    border-bottom: 1px solid #F6F6F6;
+                    color: #F6F6F6;
+                    font-size: 20px;
+
 
 
                     &::placeholder {
                         color: #F6F6F6;
-                        border-bottom: 1px solid #F6F6F6;
                         font-size: 20px;
                         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
                         font-weight: 100;
@@ -346,18 +352,21 @@ main {
     }
 
     >.log {
+
         position: absolute;
         top: 15%;
-        right: 50%;
+        left: 50%;
         width: 22%;
         height: 700px;
-        display: flex;
+        display: none;
         justify-content: center;
         background-color: #EAC7CC;
         border-radius: 10px;
         box-shadow: 2px 2px 20px 1px rgba(171, 164, 171, 0.638);
 
+
         >.signin {
+
             >h2 {
                 font-family: "Open Sans", sans-serif;
                 text-transform: uppercase;
@@ -378,17 +387,26 @@ main {
                 flex-wrap: wrap;
                 margin-top: 100px;
 
+
+
                 >input {
                     width: 80%;
                     height: 50px;
                     background-color: #EAC7CC;
                     border: none;
                     margin-top: 25px;
+                    border: none;
+                    outline: none;
+                    caret-color: #CE7D88;
+                    border-bottom: 1px solid #F6F6F6;
+                    color: #F6F6F6;
+                    font-size: 20px;
+
+
 
 
                     &::placeholder {
                         color: #F6F6F6;
-                        border-bottom: 1px solid #F6F6F6;
                         font-size: 20px;
                         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
                         font-weight: 100;
@@ -455,3 +473,18 @@ main {
     }
 
 }
+
+/* .animation1 {
+    animation: move 1s linear forwards;
+}
+
+/* ///animation  */
+/* @keyframes move {
+    from {
+        left: 50%;
+    }
+
+    to {
+        right: 50%;
+    }
+} */
