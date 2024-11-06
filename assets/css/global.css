@@ -510,29 +510,10 @@ main {
         }
 
     }
-
-}
-@media (min-width: 1201px) {
-    main > .cardbg {
-        max-width: 40%;  /* Take advantage of larger screen space */
-        height: 500px;   /* Keep height consistent for large screens */
-    }
-
-    main > .register {
-        width: 25%; /* Adjust width for register form */
-    }
-
-    main > .log {
-        width: 25%; /* Adjust width for login form */
-    }
-
-    main > .cardbg > .login, main > .cardbg > .signup {
-        width: 50%;  /* Ensure login and signup forms have consistent width */
-    }
 }
 @media (max-width: 1200px) and (min-width: 901px) {
     main > .cardbg {
-        max-width: 70%;
+        max-width: 70%; 
     }
 
     main > .register {
@@ -540,22 +521,28 @@ main {
     }
 
     main > .log {
-        width: 30%;  /* Ensure same width for the log form */
+        width: 30%;
     }
 
     main > .cardbg > .login, main > .cardbg > .signup {
         width: 45%;
     }
 }
+
+/* Media Query for Smaller Screens (less than 900px) */
 @media (max-width: 900px) {
     main > .cardbg {
         max-width: 90%;
-        height: auto;  /* Adjust height for smaller screens */
+        height: auto;
     }
 
     main > .register, main > .log {
-        width: 80%; /* Allow for larger width on small screens */
-        height: auto; /* Adjust height accordingly */
+        top: 3px; /*having no overflow*/
+        width: 45%; 
+        height: 99vh; 
+    }
+    main>.log>.signin>h2,main>.cardbg>.login >h2,main>.cardbg>.signup>h2,main>.register>.createacc>h2{
+        font-size: 22px;
     }
 
     main > .register > .createacc, main > .log > .signin {
@@ -564,15 +551,15 @@ main {
 }
 
 /* Ensure both .register and .log are consistently styled */
-.register, .log {
-    width: 22%;
+/* .register, .log {
+    width: 50%;
     height: 600px;
     display: none;
     justify-content: center;
     background-color: #EAC7CC;
     border-radius: 10px;
     box-shadow: 2px 2px 20px 1px rgba(171, 164, 171, 0.638);
-}
+} */
 /* .animation1 {
     animation: move 1s linear forwards;
 }
