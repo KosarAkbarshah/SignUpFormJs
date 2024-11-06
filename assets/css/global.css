@@ -511,41 +511,52 @@ main {
 
     }
 }
+
 @media (max-width: 1200px) and (min-width: 901px) {
-    main > .cardbg {
-        max-width: 70%; 
+    main>.cardbg {
+        max-width: 70%;
+
     }
 
-    main > .register {
+    main>.register {
+        width: 30%;
+
+    }
+
+    main>.log {
         width: 30%;
     }
 
-    main > .log {
-        width: 30%;
-    }
-
-    main > .cardbg > .login, main > .cardbg > .signup {
+    main>.cardbg>.login,
+    main>.cardbg>.signup {
         width: 45%;
     }
 }
 
 /* Media Query for Smaller Screens (less than 900px) */
 @media (max-width: 900px) {
-    main > .cardbg {
+    main>.cardbg {
         max-width: 90%;
         height: auto;
     }
 
-    main > .register, main > .log {
-        top: 3px; /*having no overflow*/
-        width: 45%; 
-        height: 99vh; 
+    main>.register,
+    main>.log {
+        top: 3px;
+        /*having no overflow*/
+        width: 45%;
+        height: 99vh;
     }
-    main>.log>.signin>h2,main>.cardbg>.login >h2,main>.cardbg>.signup>h2,main>.register>.createacc>h2{
+
+    main>.log>.signin>h2,
+    main>.cardbg>.login>h2,
+    main>.cardbg>.signup>h2,
+    main>.register>.createacc>h2 {
         font-size: 22px;
     }
 
-    main > .register > .createacc, main > .log > .signin {
+    main>.register>.createacc,
+    main>.log>.signin {
         padding: 10px;
     }
 }
