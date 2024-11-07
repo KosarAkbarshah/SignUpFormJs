@@ -504,3 +504,34 @@ main {
         right: 50%;
     }
 } */
+
+
+
+/* //////media query//// */
+
+@media (max-width: 900px) {
+    main>.cardbg {
+        max-width: 50px;
+        height: auto;
+    }
+
+    main>.register,
+    main>.log {
+        top: 3px;
+        /*having no overflow*/
+        width: 50px;
+        /* height: 99vh; */
+    }
+
+    main>.log>.signin>h2,
+    main>.cardbg>.login>h2,
+    main>.cardbg>.signup>h2,
+    main>.register>.createacc>h2 {
+        font-size: 22px;
+    }
+
+    main>.register>.createacc,
+    main>.log>.signin {
+        padding: 10px;
+    }
+}
