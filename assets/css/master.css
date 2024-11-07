@@ -15,512 +15,478 @@ main {
     justify-content: center;
     align-items: center;
 
-
-    >.cardbg {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        max-width: 50%;
-        height: 500px;
-        background-color: #F6F6F6;
-        border-radius: 10px;
-        display: flex;
-        box-shadow: 10px 10px 15px 1px rgba(171, 164, 171, 1);
-
-
-        >.login {
-            width: 50%;
-
-
-
-            >h2 {
-                text-align: center;
-                font-weight: 100;
-                color: #8e9aaf;
-                padding: 0 50px;
-                font-size: 40px;
-                margin-top: 50px;
-                font-family: "Lora", serif;
-                letter-spacing: 2px;
-
-
-
-
-                >span {
-                    color: #EAC7CC;
-                    font-weight: 100;
-                    font-family: "Lora", serif;
-
-                }
-
-            }
-
-            >p {
-                text-align: center;
-                font-weight: 300;
-                color: #8e9aaf;
-                font-size: 16px;
-                letter-spacing: 2px;
-                margin-top: 15px;
-                font-family: "Open Sans", sans-serif;
-
-
-
-                >span {
-                    color: #EAC7CC;
-                    font-weight: 200;
-                    font-family: "Open Sans", sans-serif;
-                    letter-spacing: 2px;
-                }
-
-
-            }
-
-            >figure {
-                width: 100%;
-                height: 150px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                margin-top: 30px;
-
-
-
-                >img {
-                    width: 90px;
-                    height: 110px;
-
-
-
-                }
-
-                >figcaption {
-                    text-align: center;
-                    font-size: 15px;
-                    color: #8e9aaf;
-                    font-family: "Open Sans", sans-serif;
-                    margin-top: 15px;
-                    letter-spacing: 2px;
-
-
-                }
-
-            }
-
-            >.btnlog {
-                width: 100%;
-
-                display: flex;
-                justify-content: center;
-
-                >button {
-                    border: 1px solid #CE7D88;
-                    width: 100px;
-                    height: 50px;
-                    border-radius: 10px;
-                    color: #CE7D88;
-                    background-color: #F6F6F6;
-                    margin-top: 40px;
-                    letter-spacing: 2px;
-                    transition: 1s;
-
-                    &:hover {
-                        background-color: #EAC7CC;
-                        border: none;
-                        color: #F6F6F6;
-                    }
-
-
-                }
-            }
-
-
-        }
-
-        >.signup {
-            width: 50%;
-
-            >h2 {
-                text-align: center;
-                font-weight: 100;
-                color: #8e9aaf;
-                padding: 0 50px;
-                font-size: 40px;
-                margin-top: 50px;
-                font-family: "Lora", serif;
-                letter-spacing: 2px;
-
-
-
-
-                >span {
-                    color: #EAC7CC;
-                    font-weight: 100;
-                    font-family: "Lora", serif;
-
-                }
-
-            }
-
-            >p {
-                text-align: center;
-                font-weight: 300;
-                color: #8e9aaf;
-                font-size: 16px;
-                letter-spacing: 2px;
-                margin-top: 15px;
-                font-family: "Open Sans", sans-serif;
-
-
-
-                >span {
-                    color: #EAC7CC;
-                    font-weight: 200;
-                    font-family: "Open Sans", sans-serif;
-                    letter-spacing: 2px;
-                }
-
-
-            }
-
-            >figure {
-                width: 100%;
-                height: 150px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                margin-top: 30px;
-
-
-
-                >img {
-                    width: 130px;
-
-
-                }
-
-                >figcaption {
-                    text-align: center;
-                    font-size: 15px;
-                    color: #8e9aaf;
-                    font-family: "Open Sans", sans-serif;
-                    margin-top: 15px;
-                    letter-spacing: 2px;
-
-
-                }
-
-            }
-
-            >.btnsign {
-                width: 100%;
-
-                display: flex;
-                justify-content: center;
-
-                >button {
-                    border: 1px solid #CE7D88;
-                    width: 100px;
-                    height: 50px;
-                    border-radius: 10px;
-                    color: #CE7D88;
-                    background-color: #F6F6F6;
-                    margin-top: 40px;
-                    letter-spacing: 2px;
-                    text-transform: uppercase;
-                    transition: 1s;
-
-                    &:hover {
-                        background-color: #EAC7CC;
-                        border: none;
-                        color: #F6F6F6;
-                    }
-
-
-                }
-            }
-
-        }
-    }
-
-    /* end background card   */
-    /* start register card   */
-
-    >.register {
-        position: absolute;
-        top: 15%;
-        left: 50%;
-        width: 22%;
+    >.container {
+        position: relative;
+        width: 1000px;
         height: 600px;
         display: flex;
         justify-content: center;
-        background-color: #EAC7CC;
-        border-radius: 10px;
+        align-items: center;
 
-        box-shadow: 2px 2px 20px 1px rgba(171, 164, 171, 0.638);
+        >.cardbg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 1000px;
+            min-width: 1000px;
+            min-height: 600px;
+            max-height: 600px;
+            background-color: #F6F6F6;
+            border-radius: 10px;
+            display: flex;
+            box-shadow: 10px 10px 15px 1px rgba(171, 164, 171, 1);
 
-        >.createacc {
-            >h2 {
-                font-family: "Open Sans", sans-serif;
-                text-transform: uppercase;
-                letter-spacing: 12px;
-                color: #F6F6F6;
-                margin-top: 100px;
-                text-align: center;
-                font-size: 40px;
-                font-weight: 700;
-                margin-bottom: 30px;
 
-
-            }
-
-            >.form1 {
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-
-                >input {
-                    width: 80%;
-                    height: 50px;
-                    background-color: #EAC7CC;
-                    border: none;
-                    margin-top: 18px;
-                    border: none;
-                    outline: none;
-                    caret-color: #CE7D88;
-                    border-bottom: 1px solid #F6F6F6;
-                    color: #F6F6F6;
-                    font-size: 20px;
+            >.login {
+                width: 50%;
 
 
 
-                    &::placeholder {
-                        color: #F6F6F6;
-                        font-size: 20px;
-                        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                >h2 {
+                    text-align: center;
+                    font-weight: 100;
+                    color: #8e9aaf;
+                    padding: 0 50px;
+                    font-size: 40px;
+                    margin-top: 100px;
+                    font-family: "Lora", serif;
+                    letter-spacing: 2px;
+
+
+
+
+                    >span {
+                        color: #EAC7CC;
                         font-weight: 100;
-                        padding-bottom: 6px;
-                        letter-spacing: 4px;
-
+                        font-family: "Lora", serif;
 
                     }
 
-
                 }
 
-                >.valid {
-                    color: red;
-                    width: 80%;
-                    display: none;
-
-                }
-
-                >.e-valid {
-                    color: red;
-                    width: 80%;
-                    display: none;
-
-                }
-
-                >.pass {
-                    color: red;
-                    width: 80%;
-                    display: none;
-
-
-                }
-
-
-
-
-
-            }
-
-            >.line {
-                position: absolute;
-                top: 66%;
-                left: 10%;
-                color: red;
-                width: 0px;
-                display: block;
-                transition: .4s;
-                height: 3px;
-
-
-
-            }
-
-
-            >.btnreg {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                >button {
-                    margin-top: 50px;
-                    width: 50%;
-                    height: 50px;
-                    border-radius: 10px;
-                    border: 1px solid #CE7D88;
-                    background-color: #F6F6F6;
-                    color: #CE7D88;
+                >p {
+                    text-align: center;
+                    font-weight: 300;
+                    color: #8e9aaf;
+                    font-size: 16px;
+                    letter-spacing: 2px;
+                    margin-top: 15px;
                     font-family: "Open Sans", sans-serif;
-                    font-size: 14px;
-                    letter-spacing: 3px;
-                    text-transform: uppercase;
-                    transition: 1s;
 
 
-                    &:hover {
-                        background-color: #CBC0D3;
-                        border: none;
-                        color: #F6F6F6;
+
+                    >span {
+                        color: #EAC7CC;
+                        font-weight: 200;
+                        font-family: "Open Sans", sans-serif;
+                        letter-spacing: 2px;
+                    }
+
+
+                }
+
+                >figure {
+                    width: 100%;
+                    height: 150px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    margin-top: 30px;
+
+
+
+                    >img {
+                        width: 90px;
+                        height: 110px;
+
+
+
+                    }
+
+                    >figcaption {
+                        text-align: center;
+                        font-size: 15px;
+                        color: #8e9aaf;
+                        font-family: "Open Sans", sans-serif;
+                        margin-top: 15px;
+                        letter-spacing: 2px;
+
+
                     }
 
                 }
 
+                >.btnlog {
+                    width: 100%;
+
+                    display: flex;
+                    justify-content: center;
+
+                    >button {
+                        border: 1px solid #CE7D88;
+                        width: 100px;
+                        height: 50px;
+                        border-radius: 10px;
+                        color: #CE7D88;
+                        background-color: #F6F6F6;
+                        margin-top: 40px;
+                        letter-spacing: 2px;
+                        transition: 1s;
+
+                        &:hover {
+                            background-color: #EAC7CC;
+                            border: none;
+                            color: #F6F6F6;
+                        }
+
+
+                    }
+                }
+
+
             }
 
+            >.signup {
+                width: 50%;
+
+                >h2 {
+                    text-align: center;
+                    font-weight: 100;
+                    color: #8e9aaf;
+                    padding: 0 50px;
+                    font-size: 40px;
+                    margin-top: 100px;
+                    font-family: "Lora", serif;
+                    letter-spacing: 2px;
+
+
+
+
+                    >span {
+                        color: #EAC7CC;
+                        font-weight: 100;
+                        font-family: "Lora", serif;
+
+                    }
+
+                }
+
+                >p {
+                    text-align: center;
+                    font-weight: 300;
+                    color: #8e9aaf;
+                    font-size: 16px;
+                    letter-spacing: 2px;
+                    margin-top: 15px;
+                    font-family: "Open Sans", sans-serif;
+
+
+
+                    >span {
+                        color: #EAC7CC;
+                        font-weight: 200;
+                        font-family: "Open Sans", sans-serif;
+                        letter-spacing: 2px;
+                    }
+
+
+                }
+
+                >figure {
+                    width: 100%;
+                    height: 150px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    margin-top: 30px;
+
+
+
+                    >img {
+                        width: 130px;
+
+
+                    }
+
+                    >figcaption {
+                        text-align: center;
+                        font-size: 15px;
+                        color: #8e9aaf;
+                        font-family: "Open Sans", sans-serif;
+                        margin-top: 15px;
+                        letter-spacing: 2px;
+
+
+                    }
+
+                }
+
+                >.btnsign {
+                    width: 100%;
+
+                    display: flex;
+                    justify-content: center;
+
+                    >button {
+                        border: 1px solid #CE7D88;
+                        width: 100px;
+                        height: 50px;
+                        border-radius: 10px;
+                        color: #CE7D88;
+                        background-color: #F6F6F6;
+                        margin-top: 40px;
+                        letter-spacing: 2px;
+                        text-transform: uppercase;
+                        transition: 1s;
+
+                        &:hover {
+                            background-color: #EAC7CC;
+                            border: none;
+                            color: #F6F6F6;
+                        }
+
+
+                    }
+                }
+
+            }
         }
 
+        /* end background card   */
+        /* start register card   */
 
-    }
+        >.register {
+            position: absolute;
+            top: -8%;
+            left: 50%;
+            min-width: 450px;
+            max-width: 450px;
+            min-height: 700px;
+            max-height: 700px;
+            display: flex;
+            justify-content: center;
+            background-color: #EAC7CC;
+            border-radius: 10px;
 
-    >.log {
-        position: absolute;
-        top: 15%;
-        left: 50%;
-        width: 22%;
-        height: 580px;
-        display: none;
-        justify-content: center;
-        background-color: #EAC7CC;
-        border-radius: 10px;
-        box-shadow: 2px 2px 20px 1px rgba(171, 164, 171, 0.638);
-        >.signin {
+            box-shadow: 2px 2px 20px 1px rgba(171, 164, 171, 0.638);
 
-            >h2 {
-                font-family: "Open Sans", sans-serif;
-                text-transform: uppercase;
-                letter-spacing: 12px;
-                color: #F6F6F6;
-                margin-top: 100px;
-                text-align: center;
-                font-size: 40px;
-                font-weight: 700;
-                margin-bottom: 30px;
-
-            }
-
-            >.form2 {
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                margin-top: 50px;
-
-
-
-                >input {
-                    width: 80%;
-                    height: 50px;
-                    background-color: #EAC7CC;
-                    border: none;
-                    margin-top: 25px;
-                    border: none;
-                    outline: none;
-                    caret-color: #CE7D88;
-                    border-bottom: 1px solid #F6F6F6;
+            >.createacc {
+                >h2 {
+                    font-family: "Open Sans", sans-serif;
+                    text-transform: uppercase;
+                    letter-spacing: 12px;
                     color: #F6F6F6;
-                    font-size: 20px;
-
-
-
-
-                    &::placeholder {
-                        color: #F6F6F6;
-                        font-size: 20px;
-                        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-                        font-weight: 100;
-                        padding-bottom: 6px;
-                        letter-spacing: 4px;
-
-
-                    }
-                 
-    
+                    margin-top: 100px;
+                    text-align: center;
+                    font-size: 40px;
+                    font-weight: 700;
+                    margin-bottom: 30px;
 
 
                 }
-                >.valid2 {
-                    color: red;
-                    width: 80%;
-                    display: none;
 
-                }
-                >.pass2 {
-                    color: red;
-                    width: 80%;
-                    display: none;
-
-                }
-
-                >.save {
+                >form {
+                    width: 100%;
                     display: flex;
-                    flex-direction: row;
-                    width: 80%;
-
-                    >label {
-                        color: #CE7D88;
-                        margin-left: 10px;
-                        letter-spacing: 1px;
-                        margin-top: 20px;
-                    }
+                    justify-content: center;
+                    flex-wrap: wrap;
 
                     >input {
-                        margin-top: 20px;
-                    }
-                }
-
-
-            }
-
-            >.btnsignin {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                >button {
-                    margin-top: 80px;
-                    width: 30%;
-                    height: 50px;
-                    border-radius: 10px;
-                    border: 1px solid #CE7D88;
-                    background-color: #F6F6F6;
-                    color: #CE7D88;
-                    font-family: "Open Sans", sans-serif;
-                    font-size: 14px;
-                    letter-spacing: 3px;
-                    text-transform: uppercase;
-                    transition: 1s;
-
-
-                    &:hover {
-                        background-color: #CBC0D3;
+                        width: 80%;
+                        height: 50px;
+                        background-color: #EAC7CC;
                         border: none;
+                        margin-top: 18px;
+                        border: none;
+                        outline: none;
+                        caret-color: #CE7D88;
+                        border-bottom: 1px solid #F6F6F6;
                         color: #F6F6F6;
+                        font-size: 20px;
+
+
+
+                        &::placeholder {
+                            color: #F6F6F6;
+                            font-size: 20px;
+                            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                            font-weight: 100;
+                            padding-bottom: 6px;
+                            letter-spacing: 4px;
+
+
+                        }
+
+
+                    }
+
+
+
+                }
+
+                >.btnreg {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    >button {
+                        margin-top: 50px;
+                        width: 50%;
+                        height: 50px;
+                        border-radius: 10px;
+                        border: 1px solid #CE7D88;
+                        background-color: #F6F6F6;
+                        color: #CE7D88;
+                        font-family: "Open Sans", sans-serif;
+                        font-size: 14px;
+                        letter-spacing: 3px;
+                        text-transform: uppercase;
+                        transition: 1s;
+
+
+                        &:hover {
+                            background-color: #CBC0D3;
+                            border: none;
+                            color: #F6F6F6;
+                        }
+
                     }
 
                 }
+
             }
+
 
         }
 
+        >.log {
+
+            position: absolute;
+            top: -8%;
+            left: 50%;
+            min-width: 450px;
+            max-width: 450px;
+            min-height: 700px;
+            max-height: 700px;
+            display: none;
+            justify-content: center;
+            background-color: #EAC7CC;
+            border-radius: 10px;
+            box-shadow: 2px 2px 20px 1px rgba(171, 164, 171, 0.638);
+
+
+            >.signin {
+
+                >h2 {
+                    font-family: "Open Sans", sans-serif;
+                    text-transform: uppercase;
+                    letter-spacing: 12px;
+                    color: #F6F6F6;
+                    margin-top: 100px;
+                    text-align: center;
+                    font-size: 40px;
+                    font-weight: 700;
+                    margin-bottom: 30px;
+
+                }
+
+                >form {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    margin-top: 100px;
+
+
+
+                    >input {
+                        width: 80%;
+                        height: 50px;
+                        background-color: #EAC7CC;
+                        border: none;
+                        margin-top: 25px;
+                        border: none;
+                        outline: none;
+                        caret-color: #CE7D88;
+                        border-bottom: 1px solid #F6F6F6;
+                        color: #F6F6F6;
+                        font-size: 20px;
+
+
+
+
+                        &::placeholder {
+                            color: #F6F6F6;
+                            font-size: 20px;
+                            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                            font-weight: 100;
+                            padding-bottom: 6px;
+                            letter-spacing: 4px;
+
+
+                        }
+
+
+                    }
+
+                    >.save {
+                        display: flex;
+                        flex-direction: row;
+                        width: 80%;
+
+                        >label {
+                            color: #CE7D88;
+                            margin-left: 10px;
+                            letter-spacing: 1px;
+                            margin-top: 20px;
+                        }
+
+                        >input {
+                            margin-top: 20px;
+                        }
+                    }
+
+
+                }
+
+                >.btnsignin {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    >button {
+                        margin-top: 80px;
+                        width: 30%;
+                        height: 50px;
+                        border-radius: 10px;
+                        border: 1px solid #CE7D88;
+                        background-color: #F6F6F6;
+                        color: #CE7D88;
+                        font-family: "Open Sans", sans-serif;
+                        font-size: 14px;
+                        letter-spacing: 3px;
+                        text-transform: uppercase;
+                        transition: 1s;
+
+
+                        &:hover {
+                            background-color: #CBC0D3;
+                            border: none;
+                            color: #F6F6F6;
+                        }
+
+                    }
+                }
+
+            }
+
+        }
     }
+
+
 
 }
 
