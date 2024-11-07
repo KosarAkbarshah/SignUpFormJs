@@ -419,7 +419,7 @@ main {
 
             }
 
-            >form {
+            >.form2 {
                 width: 100%;
                 display: flex;
                 justify-content: center;
@@ -454,7 +454,21 @@ main {
 
 
                     }
+                 
+    
 
+
+                }
+                >.valid2 {
+                    color: red;
+                    width: 80%;
+                    display: none;
+
+                }
+                >.pass2 {
+                    color: red;
+                    width: 80%;
+                    display: none;
 
                 }
 

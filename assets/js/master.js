@@ -8,9 +8,12 @@ const register = document.querySelector('.register')
 ///selecting login pinkcard:
 const login = document.querySelector('.log')
 /// selecting input by id
+let username = document.querySelector('#username')
 let email = document.querySelector('#email')
 let password = document.querySelector('#password')
 let password2 = document.querySelector('#password2')
+let username2 = document.querySelector('#username2')
+
 let confirmpassword = document.querySelector('#confirmpassword')
 
 
@@ -20,6 +23,10 @@ let form2 = document.querySelectorAll('.form2>input')
 const validation = document.querySelector('.valid')
 const emailValidation = document.querySelector('.e-valid')
 const pass = document.querySelector('.pass')
+const validation2 = document.querySelector('.valid2')
+const pass2 = document.querySelector('.pass2')
+const line = document.querySelector('.line')
+
 
 
 
@@ -29,10 +36,14 @@ btnlog.addEventListener('click', function () {
     register.style.display = 'none'
     login.style.display = 'block'
     login.style.transform = 'translateX(-100%)'
-    document.forms['form1']['username'].value = ""
-    document.forms['form1']['email'].value = ""
-    document.forms['form1']['password'].value = ""
-    document.forms['form1']['confirmpassword'].value = ""
+    document.forms['form2']['username2'].value = ""
+    document.forms['form2']['password2'].value = ""
+    validation2.style.display = 'none'
+    pass2.style.display = 'none'
+
+
+
+
 
 
 
@@ -43,6 +54,16 @@ btnsign.addEventListener('click', function () {
     login.style.display = 'none'
     register.style.display = 'block'
     register.style.transform = 'translateX(0)'
+    document.forms['form1']['username'].value = ""
+    document.forms['form1']['email'].value = ""
+    document.forms['form1']['password'].value = ""
+    document.forms['form1']['confirmpassword'].value = ""
+    validation.style.display = 'none'
+    emailValidation.style.display = 'none'
+    pass.style.display = 'none'
+    line.style.width = '0px'
+
+
 })
 
 
@@ -81,7 +102,6 @@ email.addEventListener('blur', function () {
 })
 
 //password
-const line = document.querySelector('.line')
 
 password.addEventListener('focus', function () {
     password.style.borderColor = '#CE7D88'
@@ -144,6 +164,12 @@ username2.addEventListener('focus', function () {
 username2.addEventListener('blur', function () {
     username2.style.borderColor = '#F6F6F6'
     username2.placeholder = 'username'
+    if (username2.value !== username.value) {
+        validation2.style.display = 'block'
+    } else {
+        validation2.style.display = 'none'
+
+    }
 })
 
 
@@ -155,8 +181,38 @@ password2.addEventListener('focus', function () {
     password2.placeholder = ''
 
 })
-username2.addEventListener('blur', function () {
+password2.addEventListener('blur', function () {
     password2.style.borderColor = '#F6F6F6'
     password2.placeholder = 'password'
+    if (password2.value !== username.value) {
+        pass2.style.display = 'block'
+    } else {
+        pass2.style.display = 'none'
+
+    }
 
 })
+//////////////////local storage
+const checkBox = document.querySelector('#checkBox')
+let usernameSave = localStorage.getItem('data1')
+let passwordSave = localStorage.getItem('data2')
+if (usernameSave && passwordSave != null) {
+    checkBox.addEventListener('focus',()=>{
+        username2=username.value 
+        password.value = password2
+    
+    })
+}
+function mylocal() {
+    let temp1 = username.value
+    let temp2 = password.value
+    localStorage.setItem('data1', (temp1))
+    localStorage.setItem('data2', (temp2))
+
+
+}
+const btnreg = document.querySelector('.btnreg')
+btnreg.addEventListener('click', () => {
+    mylocal()
+})
+
