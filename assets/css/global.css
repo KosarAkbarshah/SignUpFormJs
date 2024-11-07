@@ -391,7 +391,6 @@ main {
     }
 
     >.log {
-
         position: absolute;
         top: 15%;
         left: 50%;
@@ -402,8 +401,6 @@ main {
         background-color: #EAC7CC;
         border-radius: 10px;
         box-shadow: 2px 2px 20px 1px rgba(171, 164, 171, 0.638);
-
-
         >.signin {
 
             >h2 {
